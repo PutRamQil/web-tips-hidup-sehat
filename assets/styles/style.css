@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  background-color: #a5d6a7;
+  text-align: center;
+  padding: 10px;
+  color: #212121;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  background-color: #a5d6a7;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+nav ul {
+  gap: 0.5rem;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  background-color: #4caf50;
+  text-decoration: none;
+  color: white;
+  padding: 18px;
+  box-shadow: inset 3px 3px 5px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav li :hover {
+  background-color: #ff9800;
+  font-weight: bold;
+}
+
+main {
+  background-color: #f5f5f5;
+  color: #212121;
+  display: flex;
+  background-color: #f7bb5f;
+}
+
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.4);
+  padding: 1px 20px 25px;
+  border-radius: 10px;
+  margin: 25px;
+  background-color: #f5f5f5;
+}
+
+h2,
+h4 {
+  color: #212121;
+  font-weight: 900;
+}
+
+h2 {
+  padding-left: 5px;
+}
+
+h4 {
+  text-decoration: underline;
+  margin: 10px;
+}
+
+#content {
+  width: 75%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section p {
+  margin: 0px 10px 10px 10px;
+}
+
+.tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-tips {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+  border-radius: 20px;
+  flex: 0 0 calc(50% - 10px);
+  background-color: #a5d6a7;
+}
+
+.container-dropdown {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #a5d6a7;
+  margin: 10px 0px;
+  flex: 0 0 calc(50% - 10px);
+}
+
+.manfaat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+.container-dropdown h4 {
+  text-decoration: none;
+  color: white;
+}
+
+.container-dropdown p {
+  display: none;
+  padding: 10px 0px 5px;
+}
+
+.panah {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.panah.rotate {
+  transform: rotate(180deg);
+}
+
+#penutup {
+  padding: 15px 30px 20px;
+}
+
+aside {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+
+h3 {
+  color: #4caf50;
+}
+
+th {
+  text-align: left;
+}
+
+footer {
+  background-color: #212121;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  #content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tips {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    padding: 18px;
+  }
+}
